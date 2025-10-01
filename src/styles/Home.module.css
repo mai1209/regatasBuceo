@@ -1,0 +1,111 @@
+
+.container{
+    height: fit-content;
+    min-height: 100vh;
+    padding:100px 20px;
+    background-image: url('/fongoHome.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center ;
+    box-shadow: 5px 5px 15px #398AA9;
+    
+    
+
+}
+
+
+.title{
+    color: var(--text-light);
+    font-family: var(--font-secondary);
+    font-weight: 600;
+    font-size: 1.5rem;
+    margin-top: 1rem;
+     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.467);
+}
+
+
+
+
+.infoHome{
+    color: var(--text-light);
+    font-family: var(--font-primary);
+    font-weight: 400;
+    font-size: 0.9rem;
+    margin-top: 1rem;
+    line-height: 1.5rem;
+    max-width: 500px;
+    padding: 1rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.467);
+}
+
+
+.containerBtn{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    
+}
+
+.containerBtn button{
+
+
+    padding: 0.8rem 1.5rem;
+    margin: 0.2rem 0;
+    width: 250px;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    font-family: var(--font-primary);
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+
+
+}
+
+
+
+.containerBtnDos{
+   background: none;
+   color: var(--text-light);
+   border: 2px solid var(--text-light);
+   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.467);
+   
+ 
+}
+
+
+@media (min-width: 850px){
+  
+.container{
+    height: 100vh;
+    padding:10rem 5rem; ;
+    
+
+}
+
+.title{
+    margin-top: 3rem;
+    font-size: 2.9rem;
+}
+
+.infoHome{
+
+    font-size: 1.2rem;
+    font-weight: 300;
+    line-height: 2rem;
+    max-width: 650px;
+}
+.containerBtn{
+ 
+    flex-direction: row;
+    gap: 3rem;
+}
+.containerBtn button{
+  
+    margin: 3rem 0;
+  
+
+
+}
+
+
+}

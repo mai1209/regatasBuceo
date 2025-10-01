@@ -1,0 +1,188 @@
+.container {
+    height: fit-content;
+}
+
+
+.title {
+    color: var(--text-secondary);
+    font-family: var(--font-primary);
+    font-weight: 400;
+    font-size: 1rem;
+    padding: 1.5rem;
+}
+
+.titleCursos {
+    padding: 1rem;
+    color: var(--text-secondary);
+    font-family: 'Archivo';
+    font-style: none;
+    font-weight: 800;
+}
+
+.containerGrid {
+    display: flex;
+    flex: 1;
+    margin: 1.5rem;
+    border-radius: 33px;
+    overflow: hidden;
+}
+
+
+.itemcontainer {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    height: 300px;
+    overflow: hidden;
+    cursor: pointer;
+    padding: 2rem 0.5rem;
+    color: var(--text-light);
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s ease;
+
+}
+
+
+.itemcontainer::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: inherit;
+    filter: blur(6px) brightness(0.4);
+    transform: scale(1.1);
+    z-index: 0;
+    transition: all 0.5s ease;
+}
+
+
+.itemcontainer.open::before,
+.itemcontainer:hover::before {
+    filter: blur(0px) brightness(0.20);
+}
+
+
+.itemcontainer>* {
+    position: relative;
+    z-index: 1;
+    display: none;
+}
+
+.itemcontainer h3,
+.itemcontainer p {
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.797);
+    margin: 0.3rem 0;
+}
+
+.itemcontainer h3 {
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+.itemcontainer p {
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 1rem;
+    padding: 0.5rem;
+}
+
+
+.containerBtnEvent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.button.open {
+    padding: 0.5rem 2.2rem;
+    background-color: var(--secondary-color);
+    color: var(--text-light);
+    border-radius: 10px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 0.8rem;
+    cursor: pointer;
+
+}
+
+.button.open:hover {
+    background-color: var(--text-light);
+    color: var(--text-secondary);
+    transition: all 0.3s ease;
+}
+
+
+.itemcontainer.open,
+.itemcontainer:hover {
+    flex-grow: 3;
+}
+
+
+.itemcontainer.open>*,
+.itemcontainer:hover>* {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.itemcontainer button {
+    position: relative;
+}
+
+.iconBtn {
+    display: flex;
+    width: 50px;
+    height: 50px;
+}
+
+.img {
+    width: 20px;
+    height: 20px;
+}
+
+.iconBtn.open {
+    display: none;
+}
+
+
+
+
+.button {
+    padding: 0.5rem 2.2rem;
+    background-color: transparent;
+    color: var(--text-light);
+    border-radius: 10px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 0.8rem;
+    cursor: pointer;
+}
+
+
+@media (min-width: 850px) {
+    .containerGrid {
+        margin: 3rem 10rem;
+    }
+
+    .itemcontainer {
+        flex-direction: column;
+        height: 500px;
+    }
+
+    .title {
+        font-size: 1.7rem;
+        padding: 0;
+        margin: 6rem 15rem;
+    }
+
+    .titleCursos {
+        font-size: 2.3rem;
+        padding: 0;
+        margin: 0rem 15rem;
+    }
+}

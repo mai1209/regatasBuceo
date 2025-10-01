@@ -1,0 +1,64 @@
+/* Contenedor principal del nav */
+.container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  z-index: 99999; /* siempre arriba */
+  display: flex;
+  justify-content: center;
+  transition: background-color 0.3s ease, border 0.3s ease;
+}
+
+/* Contenido interno */
+.content {
+  position: relative; /* importante para stacking context */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 95%;
+  max-width: 1200px;
+  padding: 1rem 2rem;
+  margin: 1rem;
+  border-radius: 17px;
+  background-color: var(--text-light);
+  backdrop-filter: blur(10px);
+  transition: background-color 0.3s ease, border 0.3s ease;
+}
+
+/* Fondo al hacer scroll */
+.container.scrolled .content {
+  background-color: rgba(255, 255, 255, 0.2); /* semi-transparente */
+  border: 2px solid rgba(0,0,0,0.35);
+  backdrop-filter: blur(10px);
+}
+
+/* Links */
+.links {
+  display: none;
+  gap: 2rem;
+  align-items: center;
+}
+
+.links a {
+  text-decoration: none;
+  color: var(--text-primary);
+  font-family: var(--font-primary);
+  font-weight: 400;
+  cursor: pointer;
+}
+
+/* Logo */
+.logo {
+  width: 9rem;
+}
+
+/* Responsive */
+@media (min-width: 850px) {
+  .links {
+    display: flex;
+  }
+  .logo {
+    width: 12rem;
+  }
+}

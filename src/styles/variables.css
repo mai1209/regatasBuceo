@@ -1,0 +1,34 @@
+
+:root {
+  /* Fuentes */
+  --font-primary: 'Poppins', sans-serif;
+  --font-secondary: 'Montserrat', sans-serif;
+  
+  /* Colores principales */
+  
+  --secondary-color: #F86923;
+  --accent-color: #AFDD2D;
+  
+  /* Colores de texto */
+  --text-blue: #0e308e9a;
+  --text-secondary: #5F6367;
+  --text-light: #ffffff;
+  
+  /* Espaciado */
+  --spacing-xs: 0.25rem;
+  --spacing-sm: 0.5rem;
+  --spacing-md: 1rem;
+  --spacing-lg: 1.5rem;
+  --spacing-xl: 2rem;
+  
+  /* Fuentes */
+  --font-family-primary: system-ui, -apple-system, sans-serif;
+  --font-size-sm: 0.875rem;
+  --font-size-md: 1rem;
+  --font-size-lg: 1.25rem;
+  --font-size-xl: 1.5rem;
+  
+  /* Bordes y sombras */
+  --border-radius: 13px;
+  --box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
