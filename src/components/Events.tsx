@@ -1,7 +1,7 @@
 import style from "../styles/Events.module.css"
 
 function Events() {
-
+  const base = import.meta.env.BASE_URL;
   const Events = [
     {
       id: 1,
@@ -9,7 +9,7 @@ function Events() {
       title: "Buceo en Mar del Plata",
       date: "15 de Febrero 2025",
       info: "Incluye: Alojamiento, traslados y buceo",
-      img: "/imgS1.jpg"
+      img: base + "/imgS1.webp"
     },
     {
       id: 2,
@@ -17,7 +17,7 @@ function Events() {
       title: "Inmersion Nocturna",
       date: "22 de Marzo 2025",
       info: "Incluye: Alojamiento, traslados y buceo",
-      img: "/imgS2.jpg"
+      img: base + "/imgS2.webp"
     },
     {
       id: 3,
@@ -25,7 +25,7 @@ function Events() {
       title: "Curso Avanzado de Buceo",
       date: "5 de Abril 2025",
       info: "Incluye: Alojamiento, traslados y buceo",
-      img: "/imgS3.jpg"
+      img:  base +"/imgS3.webp"
     },
 
   ]

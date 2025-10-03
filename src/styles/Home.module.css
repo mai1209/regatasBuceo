@@ -3,7 +3,7 @@
     height: fit-content;
     min-height: 100vh;
     padding:100px 20px;
-    background-image: url('/fongoHome.jpg');
+    background-image: url('../../public/fongoHome.webp');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center ;

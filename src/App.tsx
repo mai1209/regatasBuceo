@@ -11,7 +11,7 @@ function App() {
       <Nav />
       <Whatsapp />
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/regatasBuceo" element={<Home />} />
       </Routes>
        <Events />
       <Services />

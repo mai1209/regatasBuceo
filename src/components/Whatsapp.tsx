@@ -2,6 +2,7 @@ import style from '../styles/Whatsapp.module.css'
 
 
 function WhatsAppButton() {
+    const base = import.meta.env.BASE_URL;
   return (
     <a 
       href="https://wa.me/542" 
@@ -9,7 +10,7 @@ function WhatsAppButton() {
       target="_blank"
       rel="noopener noreferrer"
     >
-    <img src="./whatsapp.png" alt="wp" />
+    <img src={`${base}whatsapp.webp`} alt="wp" />
     </a>
   )
 }

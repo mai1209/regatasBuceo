@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 
 function Nav() {
   const [scrolled, setScrolled] = useState(false)
-
+const base = import.meta.env.BASE_URL;
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > window.innerHeight) {
@@ -27,7 +27,7 @@ function Nav() {
           <Link to="./curso">Cursos</Link>
           <Link to="./contacto">Contacto</Link>
         </div>
-        <img  className={`${style.logo} ${scrolled ? style.scrolled : ''}`} src="logo.png" alt="regatas" />
+        <img  className={`${style.logo} ${scrolled ? style.scrolled : ''}`} src={`${base}logo.webp`} alt="regatas" />
       </div>
     </nav>
   )

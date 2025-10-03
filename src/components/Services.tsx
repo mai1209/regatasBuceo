@@ -2,40 +2,41 @@ import { useState } from 'react'
 import style from '../styles/Services.module.css'
 
 function Services() {
-  const [openId, setOpenId] = useState(1) // item abierto por defecto
+    const base = import.meta.env.BASE_URL;
+  const [openId, setOpenId] = useState(1) 
 
   const Services = [
     {
       id: 1,
       name: 'curso de 1 estrella',
       description: 'nivel inicial.',
-      img: "/img1.jpg"
+      img: base + "/img1.webp"
     },
 
     {
       id: 2,
       name: 'curso de 2 estrellas',
       description: 'nivel  avanzado.',
-      img: "/img2.jpg"
+      img: base + "/img2.webp"
     },
 
     {
       id: 3,
       name: 'curso de  3  estrellas',
       description: 'nivel profesional.',
-      img: "/img3.jpg"
+      img: base + "/img3.webp"
     },
     {
       id: 4,
       name: 'curso de   fotografia sub acuatica',
       description: 'nivel basico -avanzado ', 
-      img: "/img4.jpg"
+      img: base + "/img4.webp"
     },
     {
       id: 5,
       name: 'curso  de  nitrox',
       description: 'nivel incial ',
-      img: "/img5.jpg"
+      img: base + "/img5.webp"
     },
 
 
@@ -43,20 +44,20 @@ function Services() {
       id: 6,
       name: 'apnea - FREEdiving',
       description: 'nivel inicial',
-      img: "/img6.jpg"
+      img: base + "/img6.webp"
     },
 
     {
       id: 7,
       name: 'curso  de  nitrox  ',
       description: 'nivel avanzado',
-      img: "/imgN7.jpeg"
+      img: base + "/imgN7.webp"
     },
       {
       id: 8,
       name: 'buceo infantil',
       description: 'experiencia unica',
-      img: "/img8.jpeg"
+      img: base + "/img8.webp"
     },
 
   ]
@@ -88,13 +89,13 @@ function Services() {
               <p>{service.description}</p>
               <div className={style.containerBtnEvent}>
                 <img
-                  src={isOpen ? "/open-icon.png" : "/open-icon.png"}
+                  src={isOpen ? `${base}open-icon.webp` : `${base}open-icon.webp`}
                   alt="icon"
                   className={`${style.iconBtn} ${isOpen ? style.open : ''}`}
                 />
                 <button className={`${style.button} ${isOpen ? style.open : ''}`}>
 
-                  {isOpen ? "Ver más información" : <img className={style.img} src="/flecha.png" alt="flecha" />}
+                  {isOpen ? "Ver más información" : <img className={style.img} src={`${base}flecha.webp`} alt="flecha" />}
 
                 </button>
               </div>

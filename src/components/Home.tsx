@@ -2,6 +2,7 @@
 import style from '../styles/Home.module.css'
 
 function Home() {
+  
   return (
     <div className={style.container}>
       <h2 className={style.title}>EXPLORÁ LAS PROFUNDIDADES <br />
