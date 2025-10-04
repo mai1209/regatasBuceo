@@ -61,7 +61,7 @@
 
 .itemcontainer.open::before,
 .itemcontainer:hover::before {
-    filter: blur(0px) brightness(0.20);
+    filter: blur(0px) brightness(0.30);
 }
 
 
@@ -74,7 +74,7 @@
 .itemcontainer h3,
 .itemcontainer p {
     text-align: center;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.797);
+
     margin: 0.3rem 0;
 }
 

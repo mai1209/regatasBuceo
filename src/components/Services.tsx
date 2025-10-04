@@ -2,6 +2,10 @@ import { useState } from 'react'
 import style from '../styles/Services.module.css'
 
 function Services() {
+
+
+
+
     const base = import.meta.env.BASE_URL;
   const [openId, setOpenId] = useState(1) 
 
@@ -10,21 +14,24 @@ function Services() {
       id: 1,
       name: 'curso de 1 estrella',
       description: 'nivel inicial.',
-      img: base + "/img1.webp"
+      img: base + "/img1.webp",
+      icon: base + "/starOne.webp"
     },
 
     {
       id: 2,
       name: 'curso de 2 estrellas',
       description: 'nivel  avanzado.',
-      img: base + "/img2.webp"
+      img: base + "/img2.webp",
+       icon: base + "/starTwo.webp"
     },
 
     {
       id: 3,
       name: 'curso de  3  estrellas',
       description: 'nivel profesional.',
-      img: base + "/img3.webp"
+      img: base + "/img3.webp",
+       icon: base + "/starThree.webp"
     },
     {
       id: 4,
@@ -65,9 +72,9 @@ function Services() {
 
 
   return (
-    <div className={style.container}>
+    <div id='cursos' className={style.container}>
       <p className={style.title}>
-        Desde 1990 enseñamos buceo, compartimos aventuras y amistades...
+      Desde 1990 enseñamos buceo, compartimos aventuras y amistades. Esta página ofrece toda la información para sumarte a nuestras actividades y ser parte de nuestro grupo.
       </p>
       <p className={style.titleCursos}>Conoce nuestros cursos</p>
       <div className={style.containerGrid}>
@@ -89,7 +96,7 @@ function Services() {
               <p>{service.description}</p>
               <div className={style.containerBtnEvent}>
                 <img
-                  src={isOpen ? `${base}open-icon.webp` : `${base}open-icon.webp`}
+                  src={service.icon}
                   alt="icon"
                   className={`${style.iconBtn} ${isOpen ? style.open : ''}`}
                 />

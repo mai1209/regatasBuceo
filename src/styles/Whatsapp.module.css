@@ -13,8 +13,22 @@
   cursor: pointer;
   z-index: 999;
   transition: transform 0.2s ease-in-out;
+  display: none;
 }
 
 .whatsapp:hover {
   transform: scale(1.1);
+}
+
+@media (max-width: 850px){
+    .whatsapp {
+  position: fixed;
+  bottom: 40px;
+  right: 25px;
+ width: 20px;
+ height: 20px;
+
+ 
+}
+
 }

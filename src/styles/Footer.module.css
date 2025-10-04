@@ -1,0 +1,139 @@
+.container {
+    background-image: url('/logoFooter.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    background-color: #0E308E;
+
+}
+
+.logoFooter {
+    width: 60%;
+    padding: 1rem;
+}
+
+.menu {
+
+    padding: 1rem;
+}
+
+.indice {
+    color: var(--text-light);
+    font-family: var(--font-primary);
+    font-weight: 500;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+
+.links {
+    color: var(--text-light);
+    display: flex;
+    flex-direction: column;
+    font-family: var(--font-primary);
+    font-weight: 100;
+    cursor: pointer;
+}
+
+.codex {
+    display: flex;
+    color: var(--text-light);
+    font-size: 1rem;
+    gap: 1rem;
+}
+
+.copy {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    color: var(--text-light);
+    font-size: 0.8rem;
+    padding: 1rem;
+    font-family: var(--font-primary);
+    font-weight: 500;
+
+
+}
+
+.propCodex {
+    color: var(--text-secondary);
+}
+
+.logocodex {
+    width: 10%;
+    height: auto;
+}
+
+
+.linksRedes {
+    cursor: pointer;
+    display: flex;
+    gap: 1rem;
+}
+
+
+    .linksRedes img {
+        width: 30px;
+        height: 30px;
+        margin: 0.3rem 0;
+
+    }
+
+
+@media (min-width: 850px) {
+    .menus {
+        display: flex;
+        justify-content: space-around;
+        padding: 2rem 1rem;
+
+    }
+
+
+    .copy {
+        padding: 1rem 2rem;
+        flex-direction: row;
+        justify-content: space-between;
+
+
+    }
+
+    .logoFooter {
+        width: 4%;
+        padding: 2rem 5rem;
+    }
+
+    .codex {
+        display: flex;
+        justify-content: end;
+        padding: 0 2rem;
+    }
+
+    .textCodex {
+        display: flex;
+        flex-direction: column;
+        font-size: 1.5rem;
+        color: #ffffff15;
+
+    }
+
+    .indice {
+
+        font-size: 1.5rem;
+
+    }
+
+    .links {
+        font-size: 1.2rem;
+
+    }
+
+
+
+    .linksRedes img {
+        width: 40px;
+        height: 40px;
+        margin: 0.3rem 0;
+
+    }
+
+}

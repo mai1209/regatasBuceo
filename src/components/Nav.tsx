@@ -4,6 +4,19 @@ import { Link } from 'react-router-dom'
 
 function Nav() {
   const [scrolled, setScrolled] = useState(false)
+
+
+
+
+
+  const scrollToTop = () => {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth',
+    });
+  };
+
+
 const base = import.meta.env.BASE_URL;
   useEffect(() => {
     const handleScroll = () => {
@@ -24,10 +37,10 @@ const base = import.meta.env.BASE_URL;
         <div className={style.links}>
           <Link to="./home">Buzos de regatas</Link>
           <Link to="./galeria">Galería y viajes</Link>
-          <Link to="./curso">Cursos</Link>
-          <Link to="./contacto">Contacto</Link>
+          <a href="#cursos">Cursos</a>
+          <a href="#contacto">Contacto</a>
         </div>
-        <img  className={`${style.logo} ${scrolled ? style.scrolled : ''}`} src={`${base}logo.webp`} alt="regatas" />
+        <img  onClick={scrollToTop} className={`${style.logo} ${scrolled ? style.scrolled : ''}`} src={`${base}logo.webp`} alt="regatas" />
       </div>
     </nav>
   )

@@ -13,7 +13,7 @@ function Events() {
     },
     {
       id: 2,
-      price: "USD$900",
+      price: "CONSULTAR",
       title: "Inmersion Nocturna",
       date: "22 de Marzo 2025",
       info: "Incluye: Alojamiento, traslados y buceo",

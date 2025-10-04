@@ -51,6 +51,7 @@
 /* Logo */
 .logo {
   width: 9rem;
+  cursor: pointer;
 }
 
 /* Responsive */
