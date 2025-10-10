@@ -3,11 +3,13 @@
   /* Fuentes */
   --font-primary: 'Poppins', sans-serif;
   --font-secondary: 'Montserrat', sans-serif;
+  --font-archivo: 'Archivo', sans-serif;
   
   /* Colores principales */
   
   --secondary-color: #F86923;
   --accent-color: #AFDD2D;
+  --color-amarillo: #FFF317;
   
   /* Colores de texto */
   --text-blue: #0e308e9a;

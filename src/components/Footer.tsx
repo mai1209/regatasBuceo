@@ -54,10 +54,9 @@ function Footer() {
             </div>
             <div className={style.copy}>
                 <p>Todos los derechos reservados.  www.buzosderegatas.com.ar Santa Fe - Argentina</p>
-                <p className={style.propCodex}>El diseño está protegido por derechos de propiedad intelectual de Codex Corporation & Business.</p>
             </div>
         </div>
     )
 }
 
-export default Footer
+export default Footer   

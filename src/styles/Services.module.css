@@ -2,7 +2,6 @@
     height: fit-content;
 }
 
-
 .title {
     color: var(--text-secondary);
     font-family: var(--font-primary);
@@ -26,8 +25,8 @@
     margin: 1.5rem;
     border-radius: 33px;
     overflow: hidden;
+    gap: 1.5rem;
 }
-
 
 .itemcontainer {
     position: relative;
@@ -42,10 +41,7 @@
     justify-content: center;
     align-items: center;
     transition: all 0.5s ease;
-  
-
 }
-
 
 .itemcontainer::before {
     content: "";
@@ -58,12 +54,10 @@
     transition: all 0.5s ease;
 }
 
-
 .itemcontainer.open::before,
 .itemcontainer:hover::before {
     filter: blur(0px) brightness(0.30);
 }
-
 
 .itemcontainer>* {
     position: relative;
@@ -71,89 +65,88 @@
     display: none;
 }
 
-.itemcontainer h3,
-.itemcontainer p {
-    text-align: center;
-
-    margin: 0.3rem 0;
+/* === CARD === */
+.card {
+    position: relative;
+    overflow: hidden;
+    padding: 1rem 1.5rem;
+    color: var(--text-light);
+    display: flex;
+    flex-direction: row;
+    /* horizontal: icono + texto */
+    justify-content: flex-start;
+    /* ícono y texto alineados a la izquierda */
+    align-items: center;
+    /* íconos alineados verticalmente */
+    gap: 1rem;
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+    text-align: left;
+    height: 150px;
+    /* altura uniforme para todas las cards */
+    min-width: 300px;
 }
 
-.itemcontainer h3 {
+.card::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: inherit;
+    filter: blur(6px) brightness(0.3);
+    transform: scale(1.05);
+    z-index: 0;
+}
+
+.card>* {
+    position: relative;
+    z-index: 1;
+}
+
+/* === ICONO === */
+.iconBtn {
+    width: 60px;
+    height: 60px;
+    flex-shrink: 0;
+    /* no se achique */
+    object-fit: contain;
+}
+
+/* === INFO === */
+.infoCard {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    /* texto alineado a la izquierda dentro del bloque */
+    gap: 0.2rem;
+    min-height: 60px;
+    /* bloque de texto uniforme */
+    max-width: 200px;
+}
+
+.infoCard h3 {
     font-family: 'Montserrat';
-    font-weight: 500;
+    font-weight: 600;
     font-size: 1rem;
     text-transform: uppercase;
+    margin: 0;
 }
 
-.itemcontainer p {
+.infoCard p {
     font-family: 'Montserrat';
-    font-weight: 500;
-    font-size: 1rem;
-    padding: 0.5rem;
+    font-weight: 400;
+    font-size: 0.9rem;
+    margin: 0;
 }
 
-
+/* === BOTONES === */
 .containerBtnEvent {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-  
 }
-
-.button.open {
-    padding: 0.5rem 2.2rem;
-    background-color: var(--secondary-color);
-    color: var(--text-light);
-    border-radius: 10px;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 400;
-    font-size: 0.8rem;
-    cursor: pointer;
-
-}
-
-.button.open:hover {
-    background-color: var(--text-light);
-    color: var(--text-secondary);
-    transition: all 0.3s ease;
-}
-
-
-.itemcontainer.open,
-.itemcontainer:hover {
-    flex-grow: 3;
-}
-
-
-.itemcontainer.open>*,
-.itemcontainer:hover>* {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.itemcontainer button {
-    position: relative;
-}
-
-.iconBtn {
-    display: flex;
-    width: 50px;
-    height: 50px;
-}
-
-.img {
-    width: 20px;
-    height: 20px;
-}
-
-.iconBtn.open {
-    display: none;
-}
-
-
-
 
 .button {
     padding: 0.5rem 2.2rem;
@@ -166,16 +159,95 @@
     cursor: pointer;
 }
 
+.button.open {
+    background-color: var(--secondary-color);
+}
 
+.button.open:hover {
+    background-color: var(--text-light);
+    color: var(--text-secondary);
+    transition: all 0.3s ease;
+}
+
+.itemcontainer.open,
+.itemcontainer:hover {
+    flex-grow: 3;
+}
+
+.itemcontainer.open>*,
+.itemcontainer:hover>* {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.itemcontainer button {
+    position: relative;
+}
+
+.iconBtn.open {
+    display: none;
+}
+
+.buttonMore{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.5rem 2.2rem;
+    width: 350px;
+    color: var(--text-light);
+    border-radius: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 0.8rem;
+    cursor: pointer;
+    overflow: hidden; /* importante para ::before */
+    background-image: url('../../public/fondobtnmore.png');
+    background-size: cover;
+    background-position: center;
+    height: 150px;
+    
+}
+
+.buttonMore::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: inherit;
+    filter: blur(6px) brightness(0.3);
+    transform: scale(1.05);
+    z-index: 0;
+}
+
+.buttonMore > * {
+    position: relative;
+    z-index: 1; /* el texto queda encima del overlay */
+}
+
+.btnMore{
+    background-color: var(--secondary-color);
+    padding: 0.5rem 1rem;
+    border-radius:13px ;
+}
+    
+
+
+/* === MEDIA QUERIES === */
 @media (min-width: 850px) {
     .containerGrid {
         margin: 3rem 10rem;
         flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        gap: 1.5rem;
     }
 
     .itemcontainer {
         flex-direction: column;
-        height: 500px;
+        height: 180px;
     }
 
     .title {
@@ -188,5 +260,10 @@
         font-size: 2.3rem;
         padding: 0;
         margin: 0rem 15rem;
+    }
+
+    .card {
+        width: 350px;
+        height: 150px;
     }
 }

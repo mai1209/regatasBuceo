@@ -37,6 +37,7 @@
 
 .codex {
     display: flex;
+    align-items: center;
     color: var(--text-light);
     font-size: 1rem;
     gap: 1rem;
@@ -55,9 +56,6 @@
 
 }
 
-.propCodex {
-    color: var(--text-secondary);
-}
 
 .logocodex {
     width: 10%;
@@ -98,8 +96,11 @@
     }
 
     .logoFooter {
-        width: 4%;
+        width: 35%;
         padding: 2rem 5rem;
+    }
+       .logocodex {
+      width: 4%;
     }
 
     .codex {

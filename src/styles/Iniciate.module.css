@@ -1,0 +1,124 @@
+
+
+
+.container{
+    background-image: url('/fondoOlas.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: fit-content;
+    padding: 3rem 0;
+  
+}
+
+
+.title{
+   
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--accent-color);
+    font-family: var(--font-primary);
+    font-weight: 600;
+    
+}
+
+.subtitle{
+    color: var(--text-light);
+    text-align: center;
+    font-family: var(--font-primary);
+    padding: 1rem 0;
+}
+
+.cards{
+    display: flex;
+    gap: 3rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 3rem;
+}
+
+.card {
+    display: flex;
+    padding: 0.3rem;
+    gap: 2rem;
+    width: 100%;
+   
+}
+
+.card img{
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.465);
+    border: 1px solid var(--text-light);
+
+}
+.textCard{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+
+}
+
+.textCard p{
+    color: var(--text-light);
+    font-weight: 100;
+}
+.card button{
+    background-color: var(--secondary-color);
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    color: var(--text-light);
+    cursor: pointer;
+}
+
+
+
+@media (min-width: 850px){
+.container{
+    margin-top: 10rem;
+    padding-bottom: 10rem;
+}
+
+
+.title{
+   
+   
+    font-size: 2.5rem;
+    
+}
+
+.subtitle{
+    font-size: 1.4rem;
+    font-weight: 100;
+
+}
+
+.card img{
+    width: 200px;
+    height: 200px;
+    
+
+}
+
+.cards{
+  
+    flex-direction: row;
+   
+    padding-top: 7rem;
+  gap: 10rem;
+
+}
+
+.card {
+
+    width: 100%;
+    max-width: 500px;
+  
+   
+}
+
+
+}
