@@ -10,7 +10,7 @@ function WhatsAppButton() {
       target="_blank"
       rel="noopener noreferrer"
     >
-    <img src={`${base}whatsapp.webp`} alt="wp" />
+    <img src={`${base}whatsapp.png`} alt="wp" />
     </a>
   )
 }

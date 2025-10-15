@@ -28,6 +28,21 @@
     height: auto;
 }
 
+.map{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 4rem auto 8rem  auto;
+   
+
+}
+
+.map iframe{
+ box-shadow: 4px 4px 10px #00000037;
+ width: 90vw;
+ height: 200px;
+}
+
 @media (min-width: 850px){
    .title{
     font-size: 2rem;
@@ -38,4 +53,17 @@
     width: 150px;
     
 }
+
+.map{
+ 
+    margin: 6rem auto 12rem  auto;
+  
+   
+}
+.map iframe{
+
+   height: 400px;
+   
+}
+
 }

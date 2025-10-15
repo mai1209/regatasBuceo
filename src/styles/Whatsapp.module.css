@@ -16,6 +16,11 @@
   
 }
 
+.whatsapp img{
+  width: 40px ;
+  height: 40px;
+}
+
 .whatsapp:hover {
   transform: scale(1.1);
 }
