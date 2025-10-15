@@ -1,25 +1,75 @@
 .container {
     height: 100vh;
-    margin-top: 100px;
+    margin-top: 160px;
 }
 
 .containerAll {
     background-color: #fff31734;
     padding: 1rem;
     margin: 1rem 2rem;
+    
+    box-shadow: 4px 4px  10px #00000043;
+
+
+
 }
 
-.containerTitleCurso {
-    margin: 1rem 2rem;
-    display: flex;
-    justify-content: flex-end;
-    border: 4px solid red;
+
+
+
+.bgpink {
+    background-color: #fff31734;
 }
+
+.bgBlue {
+    background-color: #01A85B34;
+}
+
+
+.uno {
+    background: center / cover no-repeat url('../../public/img1.webp');
+
+
+
+}
+
+.dos {
+    background: center / cover no-repeat url('../../public/img2.webp');
+}
+
+.tres {
+    background: center / cover no-repeat url('../../public/img3.png');
+}
+
+.cuatro {
+    background: center / cover no-repeat url('../../public/img4.png');
+}
+
+.cinco {
+    background: center / cover no-repeat url('../../public/img5.png');
+}
+
+.seis {
+    background: center / cover no-repeat url('../../public/img7.png');
+}
+
+.siete {
+    background: center / cover   no-repeat url('../../public/img6.png');
+}
+
+
+
+
+
+
+
+
 
 .containerImgTitle {
-    border: 4px solid blue;
-    background: center / cover no-repeat url('../../public/img1.webp');
+
+
     border-radius: 7px;
+    min-height: 120px;
     height: fit-content;
     width: 100%;
     display: flex;
@@ -27,10 +77,35 @@
     align-items: flex-end;
     color: var(--text-light);
     padding: 0.5rem;
+  box-shadow: 0 0 10px 0 rgba(0,0,0,0.5);
+    position: relative;
+
 }
+
+
+/* Capa oscura encima */
+.containerImgTitle::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    /* top: 0; left: 0; right: 0; bottom: 0 */
+    background: rgba(0, 0, 0, 0.216);
+    /* oscurece */
+    z-index: 1;
+    border-radius: 7px;
+  
+}
+
+
+
 
 .containerImgTitle img {
     width: 7rem;
+    position: relative;
+    z-index: 2;
+    
+  
+
 }
 
 .containerImgTitle p:first-of-type {
@@ -40,10 +115,14 @@
     font-weight: 700;
     color: var(--color-amarillo);
     -webkit-text-stroke: 1px var(--accent-color);
+    position: relative;
+    z-index: 2;
 }
 
 .containerImgTitle p:nth-of-type(2) {
     font-family: var(--font-archivo);
+    position: relative;
+    z-index: 2;
 }
 
 .containerAllText {
@@ -63,6 +142,11 @@
     color: #000000;
 }
 
+.subtitle1 {
+    font-weight: 500;
+    color: #ffffff;
+}
+
 .do {
     display: flex;
     justify-content: center;
@@ -72,6 +156,16 @@
     font-size: 0.7rem;
 }
 
+.do p {
+    flex: 1;
+}
+
+.do img {
+
+    width: 20px;
+    height: 20px;
+}
+
 .textFondo {
     text-align: center;
     font-size: 0.7rem;
@@ -79,19 +173,115 @@
     margin: auto;
 }
 
-.containerBtn{
+.containerBtn {
     display: flex;
     justify-content: center;
-    align-items: center ;
+    align-items: center;
     margin-top: 1rem;
 }
 
-.btn{
-   background: none;
-   border: none;
-   background-color: var(--secondary-color); 
-   padding: 0.5rem 2rem;
-   border-radius: 7px ;
-   color: var(--text-light);
-   cursor: pointer;
+.btn {
+    background: none;
+    border: none;
+    background-color: var(--secondary-color);
+    padding: 0.5rem 2rem;
+    border-radius: 7px;
+    color: var(--text-light);
+    cursor: pointer;
+}
+
+.containerTitleCurso {
+    margin: 1rem 2rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 0.5rem;
+
+}
+.containerTitleCurso img{
+    width: 18px;
+    height: 18px;
+}
+
+.containerTitleCurso p{
+    font-size: 1.2rem;
+    font-family: var(--font-archivo) ;
+    font-weight: 600;
+    color: #4C4B4B;
+}
+
+
+@media (min-width: 850px) {
+    .containerAll {
+
+        margin: 1rem auto;
+
+        max-width: 800px;
+
+
+    }
+
+
+    .containerImgTitle {
+
+
+        min-height: 220px;
+        gap: 1.3rem;
+
+    }
+
+    .containerAllText {
+
+        font-size: 1.2rem;
+        padding: 1rem 2rem;
+
+    }
+
+    .do {
+
+        font-size: 1.2rem;
+    }
+
+    .textFondo {
+
+        font-size: 1.2rem;
+        max-width: 450px;
+
+    }
+
+    .containerImgTitle p:first-of-type {
+
+        font-size: 2rem;
+            -webkit-text-stroke: 2px var(--accent-color);
+
+    }
+
+    .btn {
+
+
+        font-size: 1.2rem;
+    }
+
+    .containerImgTitle img {
+        width: 13rem;
+    }
+
+.containerTitleCurso {
+    margin: 3rem 20rem;
+ 
+   
+
+}
+
+
+.containerTitleCurso p{
+    font-size: 2rem;
+
+}
+
+.containerTitleCurso img{
+    width: 24px;
+    height: 24px;
+}
+
 }

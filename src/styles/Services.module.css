@@ -84,8 +84,12 @@
     border-radius: 20px;
     text-align: left;
     height: 150px;
-    /* altura uniforme para todas las cards */
     min-width: 300px;
+    cursor: pointer;
+}
+
+.card:hover{
+border: 6px solid #ffffff;
 }
 
 .card::before {

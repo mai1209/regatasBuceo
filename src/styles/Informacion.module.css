@@ -61,6 +61,13 @@
     font-family: var(--font-archivo);
 }
 
+.wpContainer img{
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+
 
 @media (min-width: 850px){
     .title{

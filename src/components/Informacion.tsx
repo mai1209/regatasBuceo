@@ -12,7 +12,7 @@ function Informacion() {
             <p>Info@buzosderegatas.com.ar o</p>
             <div className={style.wpContainer}>
               <button>Envianos un Whatsapp</button>
-              <img src="" alt="wp" />
+              <img src="wpblanco.png" alt="wp" />
             </div>
           </div>
         </div>

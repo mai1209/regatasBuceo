@@ -10,13 +10,13 @@ import Home from './Home'
 function Content() {
   return (
     <>
-    <Home />
+      <Home />
       <ServicesM />
       <Events />
       <Informacion />
       <Iniciate />
       <Sponsor />
-        <Footer />
+      <Footer />
     </>
   );
 }

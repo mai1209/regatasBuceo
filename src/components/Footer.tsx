@@ -5,6 +5,12 @@ import style from '../styles/Footer.module.css'
 function Footer() {
     const base = import.meta.env.BASE_URL;
 
+  const scrollToTop = () => {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth',
+    });
+  };
 
     return (
         <div className={style.container} id='contacto'  >
@@ -13,11 +19,10 @@ function Footer() {
                 <div className={style.menu}>
                     <p className={style.indice}>indice de la web</p>
                     <div className={style.links}>
-                        <a>Inicio</a>
-                        <a>Buzos de regatas</a>
+                        <a onClick={scrollToTop} >Inicio</a>
                         <a>Galeria y viajes</a>
-                        <a>Cursos</a>
-                        <a>Contacto</a>
+                        <a href="#cursos">Cursos</a>
+                    
                     </div>
                 </div>
                 <div className={style.menu}>

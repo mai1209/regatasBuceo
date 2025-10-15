@@ -13,7 +13,7 @@
   cursor: pointer;
   z-index: 999;
   transition: transform 0.2s ease-in-out;
-  display: none;
+  
 }
 
 .whatsapp:hover {

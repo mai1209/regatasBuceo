@@ -45,31 +45,55 @@
     gap: 1rem;
     
 }
-
-.containerBtn button{
-
-
-    padding: 0.8rem 1.5rem;
-    margin: 0.2rem 0;
-    width: 250px;
-    border-radius: var(--border-radius);
-    cursor: pointer;
-    font-family: var(--font-primary);
-    font-weight: 500;
-    transition: background-color 0.3s ease;
-
-
+.containerBtn button {
+  padding: 0.8rem 1.5rem;
+  margin: 0.2rem 0;
+  width: 250px;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  font-family: var(--font-primary);
+  font-weight: 500;
+  transition: all 0.3s ease;
+ background: #018baa70 ;
+ backdrop-filter: blur(4px);
+color: white;
+  border: none;
+  position: relative;
+  overflow: hidden;
 }
 
+.containerBtn button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(120deg, transparent, rgba(255,255,255,0.3), transparent);
+  transition: all 0.5s ease;
+}
 
+.containerBtn button:hover::before {
+  left: 100%;
+}
 
-.containerBtnDos{
-   background: none;
-   color: var(--text-light);
-   border: 2px solid var(--text-light);
-   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.467);
-   
- 
+.containerBtn button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+}
+
+.containerBtnDos {
+  background: none;
+  color: var(--text-light);
+  border: 2px solid var(--text-light);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.467);
+}
+
+.containerBtnDos:hover {
+  background: var(--text-light);
+  color: #000;
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
 }
 
 

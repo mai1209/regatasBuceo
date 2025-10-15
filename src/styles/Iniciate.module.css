@@ -76,6 +76,7 @@
 
 
 
+
 @media (min-width: 850px){
 .container{
     margin-top: 10rem;
@@ -107,8 +108,7 @@
   
     flex-direction: row;
    
-    padding-top: 7rem;
-  gap: 10rem;
+   
 
 }
 
@@ -119,6 +119,8 @@
   
    
 }
+
+
 
 
 }

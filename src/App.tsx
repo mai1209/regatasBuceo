@@ -9,9 +9,9 @@ function App() {
     <div>
       <Nav />
       <Whatsapp />
-      <Routes>
-        <Route path="/regatasBuceo" element={<Content />} />
-        <Route path="/regatasBuceo/cursos" element={<Cursos />} />
+      <Routes >
+        <Route path="/" element={<Content />} />
+        <Route path="/cursos" element={<Cursos />} />
       </Routes>
     </div>
   );

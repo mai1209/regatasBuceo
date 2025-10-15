@@ -17,7 +17,7 @@ function Iniciate() {
                     <img src="./imgGaleria.webp" alt="iniciateDos" />
                      <div className={style.textCard}>
                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. A ducimus sint sapiente iure necessitatibus amet</p>
-                        <button>Ver cursos</button>
+                        <button>Ver galeria</button>
                     </div>
                 </div>
             </div>
