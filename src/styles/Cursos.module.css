@@ -27,34 +27,34 @@
 
 
 .uno {
-    background: center / cover no-repeat url('../../public/img1.webp');
+    background: center / cover no-repeat url('/img1.webp');
 
 
 
 }
 
 .dos {
-    background: center / cover no-repeat url('../../public/img2.webp');
+    background: center / cover no-repeat url('/img2.webp');
 }
 
 .tres {
-    background: center / cover no-repeat url('../../public/img3.png');
+    background: center / cover no-repeat url('/img3.png');
 }
 
 .cuatro {
-    background: center / cover no-repeat url('../../public/img4.png');
+    background: center / cover no-repeat url('/img4.png');
 }
 
 .cinco {
-    background: center / cover no-repeat url('../../public/img5.png');
+    background: center / cover no-repeat url('/img5.png');
 }
 
 .seis {
-    background: center / cover no-repeat url('../../public/img7.png');
+    background: center / cover no-repeat url('/img7.png');
 }
 
 .siete {
-    background: center / cover   no-repeat url('../../public/img6.png');
+    background: center / cover   no-repeat url('/img6.png');
 }
 
 

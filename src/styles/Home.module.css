@@ -8,8 +8,16 @@
     background-size: cover;
     background-position: center ;
     box-shadow: 5px 5px 15px #398AA9;
+    display: flex;
+    justify-content: center;
     
     
+    
+
+}
+
+.containerWidth{
+  width: 1200px;
 
 }
 
